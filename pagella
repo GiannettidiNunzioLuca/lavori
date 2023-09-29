@@ -1,0 +1,57 @@
+<script>
+
+function stampa() 
+{
+var print=document.getElementById("fname").value;
+document.getElementById("p1").innerHTML=print;
+var print=document.getElementById("lname").value;
+document.getElementById("p2").innerHTML=print;
+var print=document.getElementById("age").value;
+document.getElementById("p3").innerHTML=print;
+}
+
+</script>
+
+
+<form action="/action_page.php">
+  <label for="fname">NOME:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">COGNOME:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="age">ETA:</label><br>
+  <input type="text" id="age" name="age"><br><br>
+  <input type="button" value="clicca" onclck=stampa()>
+</form>
+
+<input type="checkbox" id="box1" name="inglese" value="inglese" onclick="onClickHandler(document.getElementById('box1').value);">
+
+  <label for="vehicle1"> Ho preso un voto in inglese </label><br>
+
+  <input type="checkbox" id="box2" name="italiano" value="italiano" onclick="onClickHandler(document.getElementById('box2').value);">
+
+  <label for="vehicle2"> Ho preso un voto in italiano</label><br>
+
+  <input type="checkbox" id="box3"  name="TPSIT "value="TPSIT" onclick="onClickHandler(document.getElementById('box3').value);">
+ 
+  <label for="vehicle3"> Ho un voto in TPSIT </label><br>
+
+  <input type="checkbox" id="box1" name="storia" value="storia" onclick="onClickHandler(document.getElementById('box1').value);">
+
+  <label for="vehicle1"> Ho un voto in storia</label><br>
+
+  <input type="checkbox" id="box2" name="matematica" value="matematica" onclick="onClickHandler(document.getElementById('box2').value);">
+
+  <label for="vehicle2"> Ho preso un voto in matematica</label><br>
+
+  <input type="checkbox" id="box3"  name="informatica" value="informatica" onclick="onClickHandler(document.getElementById('box3').value);">
+
+  <label for="vehicle3"> Ho un voto in informatica </label><br>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+</body>
+
+
+
+</html>
