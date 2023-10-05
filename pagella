@@ -1,57 +1,52 @@
-<script>
 
-function stampa() 
-{
-var print=document.getElementById("fname").value;
-document.getElementById("p1").innerHTML=print;
-var print=document.getElementById("lname").value;
-document.getElementById("p2").innerHTML=print;
-var print=document.getElementById("age").value;
-document.getElementById("p3").innerHTML=print;
-}
-
-</script>
-
-
-<form action="/action_page.php">
+  <form action="/action_page.php">
   <label for="fname">NOME:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">COGNOME:</label><br>
   <input type="text" id="lname" name="lname"><br><br>
   <label for="age">ETA:</label><br>
   <input type="text" id="age" name="age"><br><br>
-  <input type="button" value="clicca" onclck=stampa()>
-</form>
+</form> 
+Materie valutate:<br>
 
-<input type="checkbox" id="box1" name="inglese" value="inglese" onclick="onClickHandler(document.getElementById('box1').value);">
-
-  <label for="vehicle1"> Ho preso un voto in inglese </label><br>
-
-  <input type="checkbox" id="box2" name="italiano" value="italiano" onclick="onClickHandler(document.getElementById('box2').value);">
-
-  <label for="vehicle2"> Ho preso un voto in italiano</label><br>
-
-  <input type="checkbox" id="box3"  name="TPSIT "value="TPSIT" onclick="onClickHandler(document.getElementById('box3').value);">
- 
-  <label for="vehicle3"> Ho un voto in TPSIT </label><br>
-
-  <input type="checkbox" id="box1" name="storia" value="storia" onclick="onClickHandler(document.getElementById('box1').value);">
-
-  <label for="vehicle1"> Ho un voto in storia</label><br>
-
-  <input type="checkbox" id="box2" name="matematica" value="matematica" onclick="onClickHandler(document.getElementById('box2').value);">
-
-  <label for="vehicle2"> Ho preso un voto in matematica</label><br>
-
-  <input type="checkbox" id="box3"  name="informatica" value="informatica" onclick="onClickHandler(document.getElementById('box3').value);">
-
-  <label for="vehicle3"> Ho un voto in informatica </label><br>
-
-<p id="p1"></p>
-<p id="p2"></p>
-<p id="p3"></p>
-</body>
+ <body>
 
 
+  <input type="checkbox" id="box1" name="Matematica" value="Matematica" onclick="onClickHandler(document.getElementById('box1').value);">
+  
 
+  <label for="vehicle1"> Matematica</label><br>
+
+  <input type="checkbox" id="box2" name="Storia" value="storia" onclick="onClickHandler(document.getElementById('box2').value);">
+
+  <label for="vehicle2"> Storia </label><br>
+
+  <input type="checkbox" id="box3"  name="Italiano" value="Italiano" onclick="onClickHandler(document.getElementById('box3').value);">
+
+  <label for="vehicle3">Italiano</label><br>
+
+<input type="checkbox" id="box4"  name="Informatica" value="Informatica" onclick="onClickHandler(document.getElementById('box4').value);">
+
+  <label for="vehicle3">Informatica</label><br>
+
+<input type="checkbox" id="box5 "name="inglese"  value="inglese" onclick="onClickHandler(document.getElementById('box5').value);">
+
+  <label for="vehicle3">Inglese</label><br>
+  
+ <input type="checkbox" id="box6"  "name="TPSIT" value="TPSIT" onclick="onClickHandler(document.getElementById('box6').value);">
+
+  <label for="vehicle3">TPSIT</label><br>
+
+
+<p id="TPSIT"></p>
+
+ <script>
+
+  function onClickHandler(s)
+  {
+    var chk=s;
+    document.getElementById("TPSIT").innerHTML=s;
+  }
+ </script>
+  </body>
 </html>
