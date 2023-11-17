@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+   	<title>es calcolatrice</title>
+  	</head>
+  	<body>
+    	<h3>CALCOLATRICE</h3>
+	Inserire il primo numero<br>
+    	<input type="text" id="n1">
+     	<br>
+   	 Inserire il secondo numero<br>
+    	 <input type="text1" id="n2">
+      	<br>
+	<input type="button" value="+" onclick=somma()>
+	<input type="button" value="-" onclick=sottrazione()>
+	<input type="button" value="*" onclick=moltiplicazione()>
+	<input type="button" value="/" onclick=divisione()>
+        <input type="button" value="%" onclick=modulo()>
+	<p id="risultato"></p>
+	<script>
+  function somma() 
+	{
+           let a = parseInt(document.getElementById("n1").value);
+	 let b= parseInt(document.getElementById("n2").value);
+         let somma=a + b;
+         document.getElementById("risultato").innerHTML = somma;
+	     
+	 }
+ function sottrazione() 
+	{
+         let a = parseInt(document.getElementById("n1").value);
+	 let b= parseInt(document.getElementById("n2").value);
+         let sottrazione=a - b;
+         document.getElementById("risultato").innerHTML = sottrazione;
+	}
+ function moltiplicazione() 
+	{
+          let a = parseInt(document.getElementById("n1").value);
+	 let b= parseInt(document.getElementById("n2").value);
+         let moltiplicazione=a * b;
+         document.getElementById("risultato").innerHTML = moltiplicazione;
+	}
+ function divisione() 
+	{
+           let a = parseInt(document.getElementById("n1").value);
+	 let b= parseInt(document.getElementById("n2").value);
+	
+         let divisione=a / b;
+         document.getElementById("risultato").innerHTML =divisione;
+	}
+function modulo() 
+	{
+           let a = parseInt(document.getElementById("n1").value);
+	 let b= parseInt(document.getElementById("n2").value);
+	
+         let modulo =a % b;
+         document.getElementById("risultato").innerHTML =modulo;
+	}
+
+</script>
+  </body>
+</html>
